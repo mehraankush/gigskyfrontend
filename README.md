@@ -4,7 +4,7 @@
 
 Thank you for visiting Fraudulent Reporter! If you come across any suspicious or unauthorized UPI IDs related to this project, you can report them directly through our web interface.
 
-![Report UPI ID]([https://example.com/report_upi_id.png](https://github.com/mehraankush/gigskyfrontend/blob/main/public/homepage.png))
+![Report UPI ID](https://github.com/mehraankush/gigskyfrontend/blob/main/public/homepage.png)
 
 ### How to Report UPI IDs
 
