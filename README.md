@@ -2,7 +2,9 @@
 
 ## Welcome to Fraudulent Reporter
 
-Thank you for using [Your Project Name]! If you come across any suspicious or unauthorized UPI IDs related to this project, you can report them directly through our web interface.
+Thank you for visiting Fraudulent Reporter! If you come across any suspicious or unauthorized UPI IDs related to this project, you can report them directly through our web interface.
+
+![Report UPI ID]([https://example.com/report_upi_id.png](https://github.com/mehraankush/gigskyfrontend/blob/main/public/homepage.png))
 
 ### How to Report UPI IDs
 
