@@ -19,6 +19,8 @@ To report a UPI ID, follow these steps:
 3. **Create an Account:**
    - If you want to report a fraud, you will be prompted to create an account by providing the necessary details.
 
+![Report UPI ID]([https://github.com/mehraankush/gigskyfrontend/blob/main/public/homepage.png](https://github.com/mehraankush/gigskyfrontend/blob/main/public/signin.png](https://github.com/mehraankush/gigskyfrontend/blob/main/public/Screenshot%202023-12-14%20221331.png))
+
 4. **Log in to Your Account:**
    - After creating your account, log in using your credentials.
 
@@ -27,6 +29,8 @@ To report a UPI ID, follow these steps:
 
 6. **Submit the Report:**
    - Click on the "Submit" button to report the fraudulent UPI ID and transaction.
+
+   ![Report UPI ID]([https://github.com/mehraankush/gigskyfrontend/blob/main/public/homepage.png](https://github.com/mehraankush/gigskyfrontend/blob/main/public/Screenshot%202023-12-14%20221331.png))
 
 ### Guidelines for Reporting
 
