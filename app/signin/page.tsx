@@ -48,7 +48,7 @@ const Page = () => {
                             </div>
 
 
-                            <Button onClick={handleLOgin}>Create</Button>
+                            <Button onClick={handleLOgin}>Signin</Button>
                             <p className="text-sm font-light text-gray-500 dark:text-gray-400">
                             {`Don't have a account ? `}
                                 <Link href='/signup' className="font-medium text-primary-600 hover:underline dark:text-primary-500">Sign up</Link>

@@ -36,7 +36,7 @@ export const LandingContent = () => {
 
       <div className='flex justify-center items-center'>
         <div className="flex flex-col gap-5">
-          <Input type="text" placeholder="Enter Upi" onChange={(e) => setupiIs(e.target.value)} />
+          <Input type="text" className="text-black" placeholder="Enter Upi" onChange={(e) => setupiIs(e.target.value)} />
           <Dialog>
 
             <DialogTrigger><Button onClick={handleupi} className="bg-white/80 text-black font-semibold hover:bg-white"> Check</Button></DialogTrigger>
@@ -44,10 +44,6 @@ export const LandingContent = () => {
             <DialogContent>
               <DialogHeader>
                 <DialogTitle>{message}</DialogTitle>
-                {/* <DialogDescription>
-                  This action cannot be undone. This will permanently delete your account
-                  and remove your data from our servers.
-                </DialogDescription> */}
               </DialogHeader>
             </DialogContent>
           </Dialog>
