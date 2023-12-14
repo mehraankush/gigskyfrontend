@@ -8,7 +8,7 @@ const Page = () => {
     const [upiNumber, SetUpiNumber] = useState('')
     const [upiId, setUpiId] = useState('')
 
-    const handleSunmit = async(e) =>{
+    const handleSunmit = async(e:any) =>{
         e.preventDefault();
       try{
         const data = {
