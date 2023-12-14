@@ -6,7 +6,9 @@ export const signupApi = async(data:any)=>{
     try{
      return await axios.post(`${BACKEND_URL}/api/userRoutes/createuser`,data)
     }catch(err){
+        console.log(err)
         console.log('Error in signup')
+        throw new Error(err?.response?.data)
     }
 }
 

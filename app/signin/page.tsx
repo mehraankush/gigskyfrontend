@@ -22,6 +22,7 @@ const Page = () => {
             Cookies.set('token',token)
             router.push('/transaction');
         }catch(err){
+
             console.log('Error in singin')
         }
     }
