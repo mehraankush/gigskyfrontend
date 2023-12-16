@@ -5,7 +5,7 @@ const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_API;
 export const signupApi = async(data:any)=>{
     try{
      return await axios.post(`${BACKEND_URL}/api/userRoutes/createuser`,data)
-    }catch(err){
+    }catch(err:any){
         console.log(err)
         console.log('Error in signup')
         return err?.response
@@ -28,7 +28,7 @@ export const transactionApi = async(data:any)=>{
             Authorization:token
         }
      })
-    }catch(err){
+    }catch(err:any){
         console.log('Error in transactionApi',err)
         return err?.response
     }
@@ -45,7 +45,7 @@ export const UpiFraud = async(data:any)=>{
 export const ReportUpiFraud = async(data:any)=>{
     try{
      return await axios.post(`${BACKEND_URL}/api/detailsRoutes/report`,data)
-    }catch(err){
+    }catch(err:any){
         console.log('Error in Reporting Upi fraud',err);
         return err?.message;
     }
