@@ -8,7 +8,7 @@ export const signupApi = async(data:any)=>{
     }catch(err){
         console.log(err)
         console.log('Error in signup')
-        throw new Error(err?.response?.data)
+        return err?.response
     }
 }
 
@@ -29,13 +29,24 @@ export const transactionApi = async(data:any)=>{
         }
      })
     }catch(err){
-        console.log('Error in transactionApi')
+        console.log('Error in transactionApi',err)
+        return err?.response
     }
 }
+
 export const UpiFraud = async(data:any)=>{
     try{
      return await axios.get(`${BACKEND_URL}/api/detailsRoutes/checkdetails/${data}`)
     }catch(err){
-        console.log('Error in upi fraud')
+        console.log('Error in upi fraud',err)
+        return;
+    }
+}
+export const ReportUpiFraud = async(data:any)=>{
+    try{
+     return await axios.post(`${BACKEND_URL}/api/detailsRoutes/report`,data)
+    }catch(err){
+        console.log('Error in Reporting Upi fraud',err);
+        return err?.message;
     }
 }

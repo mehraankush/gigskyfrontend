@@ -5,7 +5,6 @@ const LandingPage = () =>{
 
   return (
      <div className='h-screen bg-gray-900'>
-       <LandingNavbar/>
        <LandingHero/>
       </div>
   )

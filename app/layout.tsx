@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import toast, { Toaster } from 'react-hot-toast';
+import LandingNavbar from '@/components/LandingNavbar';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +18,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`bg-gray-900 ${inter.className}`} >
+      <LandingNavbar/>
+        {children}
+        <Toaster />
+        </body>
     </html>
   )
 }
