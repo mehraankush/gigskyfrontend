@@ -31,6 +31,7 @@ To report a UPI ID, follow these steps:
    - Click on the "Submit" button to report the fraudulent UPI ID and transaction.
 
    ![Report UPI ID](https://github.com/mehraankush/gigskyfrontend/blob/main/public/Screenshot%202023-12-14%20221331.png)
+   ![Report UPI ID](https://github.com/mehraankush/gigskyfrontend/blob/main/public/Screenshot%202023-12-14%20230526.png)
 
 ### Guidelines for Reporting
 
