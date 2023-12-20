@@ -8,22 +8,54 @@ const Page = () => {
   const [senderName, setSenderName] = useState('')
   const [upiNumber, SetUpiNumber] = useState('')
   const [upiId, setUpiId] = useState('')
+  const [otp, setOtp] = useState('');
+  const [enteredOtp, setEnteredOtp] = useState('')
 
   const handleSunmit = async (e: any) => {
     e.preventDefault();
     try {
-      const data = {
-        senderName: senderName,
-        UPI_number: upiNumber,
-        UPI_ID: upiId
-      }
-      const res = await transactionApi(data);
-      console.log(res)
-      if (res?.data?.success) {
-        toast.success(res?.data?.message);
-      }
+      if(!otp){
+        toast.error("Enter Otp")
+      } else{
+        if(otp && otp == enteredOtp){
+        const data = {
+          senderName: senderName,
+          UPI_number: upiNumber,
+          UPI_ID: upiId
+        }
+        const res = await transactionApi(data);
+        console.log(res)
+        if (res?.data?.success) {
+          toast.success(res?.data?.message);
+          setOtp('')
+        }
+    } else {
+      toast.error("Incorrect OTP")
+
+    }
+  }
     } catch (err) {
       console.log('Error in Transaction', err)
+    }
+  }
+
+  const handleOtp = (e:any) =>{
+    e.preventDefault();
+    try{
+      const digits = '0123456789';
+      let otp= "";
+      for (let i = 0; i < 6; i++) {
+        const randomIndex = Math.floor(Math.random() * digits.length);
+        otp += digits.charAt(randomIndex);
+      }
+      setOtp(otp);
+
+      //  console.log(otp);
+       toast.success(`Your OTP is ${otp}, {duration: 10000}`);
+
+    } catch (err) {
+      console.log(err)
+
     }
   }
 
@@ -50,7 +82,17 @@ const Page = () => {
                   <label className="block mb-2 text-sm font-medium dark:text-white">UPI ID</label>
                   <input type="email" name="upiid" onChange={(e) => setUpiId(e.target.value)} placeholder="johnhdoe@sbi" className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5" required />
                 </div>
-                <Button onClick={handleSunmit}>Submit</Button>
+                <div className='flex flex-row '>
+                  <div className={`${otp? "": "hidden"}`}>
+                    <label className="block mb-2 text-sm font-medium dark:text-white">Enter Otp</label>
+                    <input type="email" name="upiid" onChange={(e) => setEnteredOtp(e.target.value)} placeholder="- - - - - - " className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5" required />
+                  </div>
+                  <Button className={`${otp? "mt-7 mx-3":""}`} onClick={handleOtp}>{otp? "Re-Send OTP":"Send OTP"}</Button>
+                </div>
+                <div>
+                  <Button onClick={handleSunmit} disabled={otp?false:true}>Submit</Button>
+                </div>
+                
               </form>
 
             </div>
