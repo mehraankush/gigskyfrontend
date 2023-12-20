@@ -32,6 +32,32 @@ To report a UPI ID, follow these steps:
 
    ![Report UPI ID](https://github.com/mehraankush/gigskyfrontend/blob/main/public/Screenshot%202023-12-14%20221331.png)
    ![Report UPI ID](https://github.com/mehraankush/gigskyfrontend/blob/main/public/Screenshot%202023-12-14%20230526.png)
+   
+### UPI Transactions
+
+
+1. **Enter UPI ID:** Enter the recipient's UPI ID and all the require fields and the transaction amount.
+   ![Report UPI ID](https://github.com/mehraankush/gigskyfrontend/blob/main/public/enterfields.jpeg)
+   
+2. **Complete UPI Transaction:** Follow the instructions on the UPI payment gateway to complete the transaction securely.
+   ![Report UPI ID](https://github.com/mehraankush/gigskyfrontend/blob/main/public/success.jpeg)
+
+### User-Friendly Interface
+
+### Secure Transactions
+
+After filling out the transaction form, you can ensure the security of your transaction by following these steps:
+
+1. **Fill the Form:** Provide the necessary details in the transaction form.
+     ![Report UPI ID](https://github.com/mehraankush/gigskyfrontend/blob/main/public/enterfields.jpeg)
+1. **Send OTP:** Click on the "Send OTP" button to receive a one-time password (OTP) on your registered mobile number or email.
+  ![Report UPI ID](https://github.com/mehraankush/gigskyfrontend/blob/main/public/otpsend.jpeg)
+4. **Enter OTP:** Enter the correct OTP received to proceed with the transaction.
+     ![Report UPI ID](https://github.com/mehraankush/gigskyfrontend/blob/main/public/success.jpeg)
+
+This additional layer of security ensures that only authorized users can complete transactions.
+
+
 
 ### Guidelines for Reporting
 
